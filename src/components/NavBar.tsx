@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import logo from "src/assets/images/Logo.svg";
 
 function NavBar() {
   const navLinks = [
@@ -18,7 +19,7 @@ function NavBar() {
       <nav className="flex items-center justify-between w-full mx-auto h-fit px-[max(16px,2vw)] md:px-[max(64px,4vw)] pt-8 pb-4">
         <img
           className="w-auto h-10 cursor-pointer"
-          src="src/assets/images/Logo.svg"
+          src={logo}
           alt="Logo"
         />
 
