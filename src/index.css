@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'aleo';
+  src: url('./assets/fonts/Aleo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'wildcat';
+  src: url('./assets/fonts/Wildcat-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'aleo', sans-serif;
+}
+
+/* Hide scrollbars but keep scrolling enabled */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Fade scroll content at left/right edges without covering background */
+.mask-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
